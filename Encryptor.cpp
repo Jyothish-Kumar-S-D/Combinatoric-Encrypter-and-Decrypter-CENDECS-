@@ -24,7 +24,7 @@ int main()
   cout << "Enter message to be encrypted:  ";
   getline(cin, message);
   long int len = message.length();
-  long long int ASCII_array[len];
+  long long int *ASCII_array = (long long int *) calloc(len, sizeof(long long int));
   string enc;
 
   // changing message to int array of ASCII characters
