@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstring>
+#include <string>
 using namespace std;
 int character_o;
 
@@ -25,7 +26,7 @@ string chr_convert(string numb_enc)
 int main()
 {
   string text = "really nigga!";
-  int enc_arr[text.length()];
+  int* enc_arr = (int *) calloc(text.length(), sizeof(int));
 
   // converting ti ASCII equivalent array
   for (int i = 0; i < text.length(); i++)

@@ -15,6 +15,8 @@ string Reverse(string number)
   }
   return revnum_ret;
 }
+
+
 string chr_convert(string numb_enc)
 {
   string chr_enc;
@@ -34,6 +36,7 @@ string chr_convert(string numb_enc)
   return chr_enc;
 }
 
+
 void input_to_array(string message, long long int ASCII_array[])
 {
 
@@ -42,6 +45,7 @@ void input_to_array(string message, long long int ASCII_array[])
     ASCII_array[i] = int(message[i]);
   }
 }
+
 
 void print_enc_message(string message, long long int ASCII_array[])
 {
