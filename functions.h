@@ -6,14 +6,15 @@
 using namespace std;
 // declaring functions
 
-string Reverse(string number)
+int reverse(int x)
 {
+  string number = to_string(x);
   string revnum_ret;
   for (int i = 0; i < number.length(); i++)
   {
     revnum_ret.append(1, number[(number.length() - 1) - i]);
   }
-  return revnum_ret;
+  return stoi(revnum_ret);
 }
 
 
