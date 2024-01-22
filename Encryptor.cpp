@@ -7,8 +7,7 @@
 #include <string.h>
 #include <cstring>
 #include "functions.h"
-#include "alg0.h"
-#include "alg1.h"
+#include "algorithms.h"
 using namespace std;
 
 //*********************MAIN CODE**************************************
