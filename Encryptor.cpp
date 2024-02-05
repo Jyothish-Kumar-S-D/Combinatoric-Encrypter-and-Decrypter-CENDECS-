@@ -7,8 +7,7 @@
 #include <string.h>
 #include <cstring>
 #include "functions.h"
-#include "alg0.h"
-#include "alg1.h"
+#include "algorithms.h"
 using namespace std;
 
 //*********************MAIN CODE**************************************
@@ -24,7 +23,7 @@ int main()
   cout << "Enter message to be encrypted:  ";
   getline(cin, message);
   long int len = message.length();
-  long long int ASCII_array[len];
+  long long int *ASCII_array = (long long int *) calloc(len, sizeof(long long int));
   string enc;
 
   // changing message to int array of ASCII characters
