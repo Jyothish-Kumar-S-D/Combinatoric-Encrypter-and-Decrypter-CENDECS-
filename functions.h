@@ -92,6 +92,10 @@ int complement(int num)
   return ((1 << number_of_bits)-1) ^ num;
 
 }
+int len(int arr[]){
+  return sizeof(arr)/sizeof(int);
+}
+
 
 
 #endif
